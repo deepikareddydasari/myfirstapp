@@ -9,6 +9,8 @@ const appDiv = document.getElementById('app');
    var name = document.getElementById('name').value;
    var pwd = document.getElementById('password').value;
    var gen = document.getElementById('gender').value;
-   alert(name + " "+ pwd +" "+ gen)
+   var Dob = document.getElementById('dob').value;
+   var rel = document.getElementsByName('Religion').value;
+   alert(name + " "+ pwd +" "+ gen+""+rel+"***"+Dob)
   }
 window.signup = signup;
