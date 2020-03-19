@@ -22,7 +22,7 @@ const appDiv = document.getElementById('app');
       }
 
   
-   var obj = {Name :"name", Pwd:"pwd",Gender:"gen",Birth:"Dob",Religion:"relig"}
+   var obj = {Name :name, Pwd:pwd,Gender:"gen",Birth:"Dob",Religion:"relig"}
    var jso = JSON.stringify(obj)
    //for storing data.
    localStorage.setItem("test",jso)
