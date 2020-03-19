@@ -23,13 +23,13 @@ const appDiv = document.getElementById('app');
 
   
    var obj = {Name :"name", Pwd:"pwd",Gender:"gen",Birth:"Dob",Religion:"relig"}
-   jso = JSON.stringify(obj)
+   var jso = JSON.stringify(obj)
    //for storing data.
    localStorage.setItem("test",jso)
    //for retrieving data
-  text = localStorage.getItem("test")
-  myobj = JSON.parse(text)
- alert(myobj.name + " "+ myobj.pwd +" "+ myobj.gen+  ""+myobj.relig+"***"+myobj.Dob)
+  var text = localStorage.getItem("test")
+  var myobj = JSON.parse(text)
+ alert(myobj.Name + " "+ myobj.Pwd +" "+ myobj.Gender+  ""+myobj.Religion+"***"+myobj.Birth)
 
 
   }
