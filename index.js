@@ -23,5 +23,14 @@ const appDiv = document.getElementById('app');
 
    alert(name + " "+ pwd +" "+ gen+  ""+relig+"***"+Dob)
    var obj = {Name :"name", Pwd:"pwd",Gender:"gen",Birth:"Dob",Religion:"relig"}
+   jso = JSON.stringify(obj)
+   //for storing data.
+   localStorage.setItem("test",jso)
+   //for retrieving data
+  text = localStorage.getItem("test")
+  myobj = JSON.parse(text)
+  
+
+
   }
 window.signup = signup;
