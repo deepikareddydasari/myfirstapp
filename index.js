@@ -11,6 +11,6 @@ const appDiv = document.getElementById('app');
    var gen = document.getElementById('gender').value;
    var Dob = document.getElementById('dob').value;
    var rel = document.getElementsByName('Religion').value;
-   alert(name + " "+ pwd +" "+ gen+""+rel+"***"+Dob)
+   alert(name + " "+ pwd +" "+ gen+  ""+rel+"***"+Dob)
   }
 window.signup = signup;
