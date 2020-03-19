@@ -20,8 +20,8 @@ const appDiv = document.getElementById('app');
       else if(pwd == ''){
         alert("Enter Password")
       }
-    
 
    alert(name + " "+ pwd +" "+ gen+  ""+relig+"***"+Dob)
+   var obj = {Name :"name", Pwd:"pwd",Gender:"gen",Birth:"Dob",Religion:"relig"}
   }
 window.signup = signup;
