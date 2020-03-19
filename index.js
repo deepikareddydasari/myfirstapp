@@ -21,7 +21,7 @@ const appDiv = document.getElementById('app');
         alert("Enter Password")
       }
 
-   alert(name + " "+ pwd +" "+ gen+  ""+relig+"***"+Dob)
+  
    var obj = {Name :"name", Pwd:"pwd",Gender:"gen",Birth:"Dob",Religion:"relig"}
    jso = JSON.stringify(obj)
    //for storing data.
@@ -29,7 +29,7 @@ const appDiv = document.getElementById('app');
    //for retrieving data
   text = localStorage.getItem("test")
   myobj = JSON.parse(text)
-  
+ alert(myobj.name + " "+ myobj.pwd +" "+ myobj.gen+  ""+myobj.relig+"***"+myobj.Dob)
 
 
   }
