@@ -10,7 +10,18 @@ const appDiv = document.getElementById('app');
    var pwd = document.getElementById('password').value;
    var gen = document.getElementById('gender').value;
    var Dob = document.getElementById('dob').value;
-   var rel = document.getElementsByName('Religion').value;
-   alert(name + " "+ pwd +" "+ gen+  ""+rel+"***"+Dob)
+   var rel = document.getElementsByName('Religion');
+   for( var i=0;i<rel.length;i++){
+     if(rel[i].checked)
+     var relig = rel[i].value
+   }
+    if(name == ''){
+      alert("Enter Username")}
+      else if(pwd == ''){
+        alert("Enter Password")
+      }
+    
+
+   alert(name + " "+ pwd +" "+ gen+  ""+relig+"***"+Dob)
   }
 window.signup = signup;
